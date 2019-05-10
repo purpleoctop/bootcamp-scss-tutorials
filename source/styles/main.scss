@@ -64,6 +64,24 @@ border:none;
     padding:27px 101px;
 }
 
+&.round{
+    &-3{
+        border-radius:3px;
+    }
+
+    &-7{
+        border-radius:7px;
+    }
+
+    &-12{
+        border-radius:12px;
+    }
+
+    &-20{
+        border-radius:20px;
+    }
+}
+
 }
 
 
