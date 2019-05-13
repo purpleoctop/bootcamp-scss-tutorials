@@ -1,17 +1,16 @@
-*{
+* {
     box-sizing: border-box;
-    padding:0px;
-    margin: 0px;
+    margin: 0;
+    padding: 0;
 }
 
-body{
+body {
     -moz-osx-font-smoothing: grayscale;
     -webkit-font-smoothing: antialiased;
 }
 
-
 $color-1: #21C2F8;
-$color-2: #FFF;
+$color-2: #FFFFFF;
 $color-3: #222533;
 $color-4: #F39705;
 $color-5: #E25611;
@@ -23,117 +22,113 @@ $color-10: #F82F54;
 $color-11: #8FC567;
 $font-1:'Lato', sans-serif;
 
+.btn {
+    padding: 11px 37px;
+    border: none;
+    background-color: $color-1;
+    color: $color-2;
+    font-family: $font-1;
+    font-size: 14px;
+    font-weight: 900;
+    text-decoration: none;
+    text-transform: uppercase;
 
+    &:hover {
+        background-color: $color-3;
+    }
 
+    &.medium {
+        padding: 13px 46px;
+        font-size: 18px;
+    }
 
+    &.large {
+        padding: 24px 95px;
+        font-size: 26px;
+    }
 
-.row{
-    margin-top:50px;
-    margin-left:50px;
-    display:flex;
-    align-items: flex-end;
-    .btn{
-        margin-right:30px;
-        &:last-child{
-            margin-right:0px;
+    &.x-large {
+        padding: 27px 101px;
+        font-size: 36px; 
+    }
+
+    &.round {
+            &-3 {
+            border-radius: 3px;
+                }
+
+        &-7 {
+            border-radius: 7px;
+        }
+
+        &-12 {
+            border-radius: 12px;
+        }
+
+        &-20 {
+            border-radius: 20px;
+        }
+    }
+
+    &.bg-color {
+
+        &-1 {
+            background-color: $color-1;
+        }
+
+        &-2 {
+            background-color: $color-2;
+        }
+
+        &-3 {
+            background-color: $color-3;
+        }
+
+        &-4 {
+            background-color: $color-4;
+        }
+
+        &-5 {
+            background-color: $color-5;
+        }
+
+        &-6 {
+            background-color: $color-6;
+        }
+
+        &-7 {
+            background-color: $color-7;
+        }
+
+        &-8 {
+            background-color: $color-8;
+        }
+
+        &-9 {
+            background-color: $color-9;
+        }
+
+        &-10 {
+            background-color: $color-10;
+        }
+
+        &-11 {
+            background-color: $color-11;
         }
     }
 }
 
+.row {
+    display: flex;
+    align-items: flex-end;
+    margin-top: 50px;
+    margin-left: 50px;
 
+    .btn {
+        margin-right: 30px;
 
-
-.btn{
-background-color: $color-1;
-color: $color-2;
-text-decoration: none;
-text-transform: uppercase;
-font-family: $font-1;
-font-weight:900;
-font-size:14px;
-padding:11px 37px;
-border:none;
-
-&:hover{
-    background-color: $color-3;
-}
-
-&.medium{
-    font-size:18px;
-    padding:13px 46px;
-}
-
-
-
-&.large{
-    font-size:26px;
-    padding:24px 95px;
-}
-&.x-large{
-    font-size:36px;
-    padding:27px 101px;
-}
-
-&.round{
-    &-3{
-        border-radius:3px;
-    }
-
-    &-7{
-        border-radius:7px;
-    }
-
-    &-12{
-        border-radius:12px;
-    }
-
-    &-20{
-        border-radius:20px;
+        &:last-child {
+            margin-right: 0;
+        }
     }
 }
-
-&.bg-color{
-    &-1{
-        background-color: $color-1
-    }
-
-    &-2{
-        background-color: $color-2
-    }
-
-    &-3{
-        background-color: $color-3
-    }
-
-    &-4{
-        background-color: $color-4
-    }
-    &-5{
-        background-color: $color-5
-    }
-
-    &-6{
-        background-color: $color-6
-    }
-    &-7{
-        background-color: $color-7
-    }
-    &-8{
-        background-color: $color-8
-    }
-    &-9{
-        background-color: $color-9
-    }
-    &-10{
-        background-color: $color-10
-    }
-    &-11{
-        background-color: $color-11
-    }
-
-}
-
-}
-
-
-
