@@ -1,13 +1,5 @@
 @import 'reset';
-
-* {
-    box-sizing: border-box;
-}
-
-body {
-    -moz-osx-font-smoothing: grayscale;
-    -webkit-font-smoothing: antialiased;
-}
+@import 'base';
 
 $color-1: #21C2F8;
 $color-2: #FFFFFF;
@@ -53,9 +45,10 @@ $font-1:'Lato', sans-serif;
     }
 
     &.round {
-            &-3 {
+
+        &-3 {
             border-radius: 3px;
-                }
+        }
 
         &-7 {
             border-radius: 7px;
