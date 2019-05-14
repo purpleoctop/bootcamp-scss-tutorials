@@ -2,7 +2,7 @@
 
 .btn {
     border: none;
-    background-color: $color-1;
+    background-color: color(1);
     color: $color-2;
     font-family: 'Lato', sans-serif;
     font-weight: 900;
@@ -10,7 +10,7 @@
     text-transform: uppercase;
 
     &:hover {
-        background-color: $color-3;
+        background-color: color(3);
     }
 
     @include size(14px, 11px, 37px, 10.8px, 37.1px);
@@ -38,65 +38,28 @@
         }
 
         &.bg-color {
+            @each $ind, $color in $palette {
 
-            &-1 {
-                background-color: $color-1;
+                &-#{$ind} {
+                    background-color: $color;
+                }
             }
+        }
 
-            &-2 {
-                background-color: $color-2;
-            }
+        .row {
+            display: flex;
+            align-items: flex-end;
+            margin-top: 50px;
+            margin-left: 50px;
 
-            &-3 {
-                background-color: $color-3;
-            }
+            .btn {
+                margin-right: 30px;
 
-            &-4 {
-                background-color: $color-4;
-            }
-
-            &-5 {
-                background-color: $color-5;
-            }
-
-            &-6 {
-                background-color: $color-6;
-            }
-
-            &-7 {
-                background-color: $color-7;
-            }
-
-            &-8 {
-                background-color: $color-8;
-            }
-
-            &-9 {
-                background-color: $color-9;
-            }
-
-            &-10 {
-                background-color: $color-10;
-            }
-
-            &-11 {
-                background-color: $color-11;
+                &:last-child {
+                    margin-right: 0;
+                }
             }
         }
     }
 
-    .row {
-        display: flex;
-        align-items: flex-end;
-        margin-top: 50px;
-        margin-left: 50px;
-
-        .btn {
-            margin-right: 30px;
-
-            &:last-child {
-                margin-right: 0;
-            }
-        }
-    }
 }
