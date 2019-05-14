@@ -3,7 +3,7 @@
 .btn {
     border: none;
     background-color: color(1);
-    color: $color-2;
+    color: color(2);
     font-family: 'Lato', sans-serif;
     font-weight: 900;
     text-decoration: none;
@@ -30,36 +30,35 @@
     &.round {
         $corners: 3, 7, 12, 20;
 
-        @each $corners in $corners {
+        @each $corner in $corners {
 
             &-#{$corner} {
                 border-radius: $corner +px;
             }
         }
+    }
 
-        &.bg-color {
-            @each $ind, $color in $palette {
+    &.bg-color {
+        @each $ind, $color in $palette {
 
-                &-#{$ind} {
-                    background-color: $color;
-                }
-            }
-        }
-
-        .row {
-            display: flex;
-            align-items: flex-end;
-            margin-top: 50px;
-            margin-left: 50px;
-
-            .btn {
-                margin-right: 30px;
-
-                &:last-child {
-                    margin-right: 0;
-                }
+            &-#{$ind} {
+                background-color: $color;
             }
         }
     }
+}
 
+.row {
+    display: flex;
+    align-items: flex-end;
+    margin-top: 50px;
+    margin-left: 50px;
+
+    .btn {
+        margin-right: 30px;
+
+        &:last-child {
+            margin-right: 0;
+        }
+    }
 }
