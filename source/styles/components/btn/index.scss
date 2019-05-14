@@ -28,83 +28,75 @@
     }
 
     &.round {
+        $corners: 3, 7, 12, 20;
 
-        &-3 {
-            border-radius: 3px;
+        @each $corners in $corners {
+
+            &-#{$corner} {
+                border-radius: $corner +px;
+            }
         }
 
-        &-7 {
-            border-radius: 7px;
-        }
+        &.bg-color {
 
-        &-12 {
-            border-radius: 12px;
-        }
+            &-1 {
+                background-color: $color-1;
+            }
 
-        &-20 {
-            border-radius: 20px;
-        }
-    }
+            &-2 {
+                background-color: $color-2;
+            }
 
-    &.bg-color {
+            &-3 {
+                background-color: $color-3;
+            }
 
-        &-1 {
-            background-color: $color-1;
-        }
+            &-4 {
+                background-color: $color-4;
+            }
 
-        &-2 {
-            background-color: $color-2;
-        }
+            &-5 {
+                background-color: $color-5;
+            }
 
-        &-3 {
-            background-color: $color-3;
-        }
+            &-6 {
+                background-color: $color-6;
+            }
 
-        &-4 {
-            background-color: $color-4;
-        }
+            &-7 {
+                background-color: $color-7;
+            }
 
-        &-5 {
-            background-color: $color-5;
-        }
+            &-8 {
+                background-color: $color-8;
+            }
 
-        &-6 {
-            background-color: $color-6;
-        }
+            &-9 {
+                background-color: $color-9;
+            }
 
-        &-7 {
-            background-color: $color-7;
-        }
+            &-10 {
+                background-color: $color-10;
+            }
 
-        &-8 {
-            background-color: $color-8;
-        }
-
-        &-9 {
-            background-color: $color-9;
-        }
-
-        &-10 {
-            background-color: $color-10;
-        }
-
-        &-11 {
-            background-color: $color-11;
+            &-11 {
+                background-color: $color-11;
+            }
         }
     }
-}
 
-.row {
-    display: flex;
-    align-items: flex-end;
-    margin-top: 50px;
-    margin-left: 50px;
+    .row {
+        display: flex;
+        align-items: flex-end;
+        margin-top: 50px;
+        margin-left: 50px;
 
-    .btn {
-        margin-right: 30px;
+        .btn {
+            margin-right: 30px;
 
-        &:last-child {
-            margin-right: 0;
+            &:last-child {
+                margin-right: 0;
+            }
         }
     }
 }
